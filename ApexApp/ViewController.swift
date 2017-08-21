@@ -11,10 +11,10 @@ import Apex
 
 class ViewController: UIViewController
 {
-  lazy var store: Store<CalculatorBrain> = {
+  lazy var store: Store<CurrentState> = {
     return Store(state: self.state)
   }()
-  let state = CalculatorBrain()
+  let state = CurrentState()
   
   @IBOutlet weak var plusButton: UIButton!
   @IBOutlet weak var minusButton: UIButton!
@@ -27,8 +27,7 @@ class ViewController: UIViewController
   {
     super.viewDidLoad()
     
-    store = Store(state: CalculatorBrain())
-    
+    store = Store(state: CurrentState())
     store.subscribe
       {
         [unowned self] CalculatorBrain in
@@ -64,7 +63,7 @@ extension ViewController
 
 extension ViewController
 {
-  struct CalculatorBrain: State
+  struct CurrentState: State
   {
     var operandOne = 1.0
     var operandTwo = 2.0
