@@ -13,6 +13,7 @@
         <!--Calculator View Controller-->
         <scene sceneID="ahU-7R-USd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5c9-xN-9B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="u0i-hX-Jiz" customClass="CalculatorViewController" customModule="ApexApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tLJ-ev-zxJ"/>
@@ -36,7 +37,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="hgd-Wa-oUS"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="eTC-JA-wOW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-5n-6lx">
@@ -45,7 +46,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="drS-SQ-jXl"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="Ekf-F6-Rws"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNY-4z-FMD">
@@ -54,7 +55,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="iNg-gH-ReS"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="WoN-Z5-6eJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-Fz-A00">
@@ -63,7 +64,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="Chm-pT-bRD"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="zs7-bZ-qlm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNb-B1-3cM">
@@ -73,7 +74,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="8cN-Ns-IP0"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="bH6-VW-vYH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-Ox-igZ">
@@ -82,7 +83,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="vKl-bg-Unx"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="UvS-qf-mMT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBz-L6-I24">
@@ -91,7 +92,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="YVh-l1-DbK"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="CiV-w3-ss0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGU-gk-ayi">
@@ -100,7 +101,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="hDJ-jX-0UT"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="lSc-g6-OMX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tP-cl-ad1">
@@ -110,7 +111,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="JMB-Jc-wLI"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="W4v-S8-Kbl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY5-Dx-NWD">
@@ -119,7 +120,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="8f3-gc-pP9"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="a4f-RH-rxO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnu-DU-2By">
@@ -128,7 +129,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="Vah-KT-oCs"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="4YE-h1-xwD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vq-1h-xRZ">
@@ -137,7 +138,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="9dQ-9B-8B1"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="QH6-JN-0BO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k98-St-qBu">
@@ -147,7 +148,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="hFJ-2v-o7i"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="xaU-fh-Jxk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-YR-NK4">
@@ -157,7 +158,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="bKY-mk-yII"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="pt2-NQ-Wmh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-wg-uGa">
@@ -167,7 +168,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="8mE-Sb-EZe"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="k2q-w1-KSH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoF-5q-jUm">
@@ -176,7 +177,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="g87-24-Fh9"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="kCE-Ew-ktL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDj-a7-V9j">
@@ -186,7 +187,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="yVn-xm-ceG"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="aOY-Wu-0bE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcd-FN-kiV">
@@ -195,7 +196,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="iQI-rM-yOr"/>
+                                    <action selector="operandTappedWithSender:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="Xqc-DR-gST"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lx-oQ-IpO">
@@ -205,7 +206,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="L1R-fz-LEE"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="2Jk-FZ-fmc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiE-Eh-XHM">
@@ -215,7 +216,7 @@
                                     <color key="titleColor" red="0.030145615180000002" green="0.030145615180000002" blue="0.030145615180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="Ia9-rW-zUk"/>
+                                    <action selector="operationSymbolTapped:" destination="u0i-hX-Jiz" eventType="touchUpInside" id="QNG-c9-QYy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -332,7 +333,6 @@
                         <outlet property="zeroButton" destination="MoF-5q-jUm" id="TiZ-Os-UWQ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5c9-xN-9B3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-38" y="6"/>
         </scene>

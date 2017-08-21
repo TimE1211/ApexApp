@@ -58,12 +58,7 @@ class CalculatorViewController: UIViewController
     
     resultLabel.text = "0"
   }
-  
-//  @IBAction func plusTouchUpInside(_ sender: UIButton)
-//  {
-//    store.dispatch(action: Actions.plusTapped)
-//  }
-  
+
   @IBAction func operationSymbolTapped(_ sender: UIButton)
   {
     switch sender
@@ -81,7 +76,7 @@ class CalculatorViewController: UIViewController
       default: break
     }
   }
-  @IBAction func operatorTapped(sender: UIButton)
+  @IBAction func operandTapped(sender: UIButton)
   {
     if state.operationSymbol == ""
     {
@@ -90,7 +85,6 @@ class CalculatorViewController: UIViewController
     else
     {
       store.dispatch(action: Actions.operandTwoTapped(number: sender.currentTitle!))
-      number = sender.currentTitle!
     }
   }
 }
@@ -129,6 +123,8 @@ extension CalculatorViewController
     {
       switch action
       {
+        
+        
         case Actions.addTapped: operationSymbol = "+"
         case Actions.subtractTapped: operationSymbol = "-"
         case Actions.multiplyTapped: operationSymbol = "*"
