@@ -85,13 +85,12 @@ class CalculatorViewController: UIViewController
   {
     if state.operationSymbol == ""
     {
-      store.dispatch(action: Actions.operandOneTapped)
-      number = sender.currentTitle
+      store.dispatch(action: Actions.operandOneTapped(number: sender.currentTitle!))
     }
     else
     {
-      store.dispatch(action: Actions.operandTwoTapped)
-      number = sender.currentTitle
+      store.dispatch(action: Actions.operandTwoTapped(number: sender.currentTitle!))
+      number = sender.currentTitle!
     }
   }
 }
@@ -100,8 +99,8 @@ extension CalculatorViewController
 {
   enum Actions: Action
   {
-    case operandOneTapped
-    case operandTwoTapped
+    case operandOneTapped(number: String)
+    case operandTwoTapped(number: String)
     
     case addTapped
     case subtractTapped
@@ -124,28 +123,26 @@ extension CalculatorViewController
     var operandTwo = ""
     var operationSymbol = ""
     var result = ""
+    var number = ""
     
     mutating func transition(_ action: Action)
     {
       switch action
       {
-        case Actions.operandOneTapped: operandOne =
-        case Actions.operandTwoTapped: operandOne =
-          
         case Actions.addTapped: operationSymbol = "+"
-        case Actions.subtractTapped: operationSymbol = "+"
-        case Actions.multiplyTapped: operationSymbol = "+"
-        case Actions.divideTapped: operationSymbol = "+"
+        case Actions.subtractTapped: operationSymbol = "-"
+        case Actions.multiplyTapped: operationSymbol = "*"
+        case Actions.divideTapped: operationSymbol = "/"
         
         case Actions.equalsTapped:
           switch operationSymbol
           {
             case "+":
-              result = String(Double(operandOne)! - Double(operandTwo)!)
+              result = String(Double(operandOne)! + Double(operandTwo)!)
             case "-":
               result = String(Double(operandOne)! - Double(operandTwo)!)
             case "*":
-              result = String(Double(operandOne)! - Double(operandTwo)!)
+              result = String(Double(operandOne)!*Double(operandTwo)!)
             case "/":
               if operandTwo == "0"
               {
@@ -153,15 +150,14 @@ extension CalculatorViewController
               }
               else
               {
-                result = String(Double(operandOne)!/Double(operandTwo)!)              }
-      
-            case Actions.plusMinusTapped: String(Double(result) *= -1.0)
-            case Actions.sqrtTapped: String(Double(result) = sqrt(result))
-            case Actions.clearTapped: String(Double(result) = 0.0)
-            case Actions.percentTapped: result = Double(result) * 100
-        
+                result = String(Double(operandOne)!/Double(operandTwo)!)
+              }
             default: break
           }
+        case Actions.plusMinusTapped: result = String(Double(result)! * -1.0)
+        case Actions.sqrtTapped: result = String(sqrt(Double(result)!))
+        case Actions.clearTapped: result = "0"
+        case Actions.percentTapped: result = String(Double(result)! * 100)
       default: break
       }
     }
