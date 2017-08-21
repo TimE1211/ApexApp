@@ -51,8 +51,7 @@ class CalculatorViewController: UIViewController
     super.viewDidLoad()
     
     store = Store(state: CurrentState())
-    store.subscribe
-      {
+    store.subscribe {
         [unowned self] CurrentState in
       self.resultLabel.text = String(CurrentState.result)
       }.unsubscribed(by: &unsubscribers)
@@ -84,12 +83,10 @@ class CalculatorViewController: UIViewController
     if state.operationSymbol == ""
     {
       store.dispatch(action: Actions.operandOneTapped)
-      state.number = ""
     }
     else
     {
       store.dispatch(action: Actions.operandTwoTapped)
-      state.number = ""
     }
   }
 }
