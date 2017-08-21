@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205E40571F4B94B000E3D369 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E40561F4B94B000E3D369 /* State.swift */; };
+		205E405B1F4B950600E3D369 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E405A1F4B950600E3D369 /* Actions.swift */; };
 		20F3EE781F3BFB8C00BCA183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3EE771F3BFB8C00BCA183 /* AppDelegate.swift */; };
 		20F3EE7A1F3BFB8C00BCA183 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3EE791F3BFB8C00BCA183 /* ViewController.swift */; };
 		20F3EE7D1F3BFB8C00BCA183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F3EE7B1F3BFB8C00BCA183 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		205E40561F4B94B000E3D369 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		205E405A1F4B950600E3D369 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		20F3EE741F3BFB8C00BCA183 /* ApexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F3EE771F3BFB8C00BCA183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F3EE791F3BFB8C00BCA183 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			children = (
 				20F3EE771F3BFB8C00BCA183 /* AppDelegate.swift */,
 				20F3EE791F3BFB8C00BCA183 /* ViewController.swift */,
+				205E40561F4B94B000E3D369 /* State.swift */,
+				205E405A1F4B950600E3D369 /* Actions.swift */,
 				20F3EE7B1F3BFB8C00BCA183 /* Main.storyboard */,
 				20F3EE7E1F3BFB8C00BCA183 /* Assets.xcassets */,
 				20F3EE801F3BFB8C00BCA183 /* LaunchScreen.storyboard */,
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F3EE7A1F3BFB8C00BCA183 /* ViewController.swift in Sources */,
+				205E405B1F4B950600E3D369 /* Actions.swift in Sources */,
 				20F3EE781F3BFB8C00BCA183 /* AppDelegate.swift in Sources */,
+				205E40571F4B94B000E3D369 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +387,7 @@
 				20F3EE881F3BFB8C00BCA183 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

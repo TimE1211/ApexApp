@@ -14,7 +14,8 @@ class CalculatorViewController: UIViewController
   lazy var store: Store<CurrentState> = {
     return Store(state: self.state)
   }()
-  let state = CurrentState()
+  
+  var state = CurrentState()
   
   @IBOutlet weak var resultLabel: UILabel!
   
@@ -78,84 +79,17 @@ class CalculatorViewController: UIViewController
   }
   @IBAction func operandTapped(sender: UIButton)
   {
+    state.number = sender.currentTitle!
+    
     if state.operationSymbol == ""
     {
-      store.dispatch(action: Actions.operandOneTapped(number: sender.currentTitle!))
+      store.dispatch(action: Actions.operandOneTapped)
+      state.number = ""
     }
     else
     {
-      store.dispatch(action: Actions.operandTwoTapped(number: sender.currentTitle!))
-    }
-  }
-}
-
-extension CalculatorViewController
-{
-  enum Actions: Action
-  {
-    case operandOneTapped(number: String)
-    case operandTwoTapped(number: String)
-    
-    case addTapped
-    case subtractTapped
-    case equalsTapped
-    case multiplyTapped
-    case divideTapped
-    
-    case plusMinusTapped
-    case sqrtTapped
-    case clearTapped
-    case percentTapped
-  }
-}
-
-extension CalculatorViewController
-{
-  struct CurrentState: State
-  {
-    var operandOne = ""
-    var operandTwo = ""
-    var operationSymbol = ""
-    var result = ""
-    var number = ""
-    
-    mutating func transition(_ action: Action)
-    {
-      switch action
-      {
-        
-        
-        case Actions.addTapped: operationSymbol = "+"
-        case Actions.subtractTapped: operationSymbol = "-"
-        case Actions.multiplyTapped: operationSymbol = "*"
-        case Actions.divideTapped: operationSymbol = "/"
-        
-        case Actions.equalsTapped:
-          switch operationSymbol
-          {
-            case "+":
-              result = String(Double(operandOne)! + Double(operandTwo)!)
-            case "-":
-              result = String(Double(operandOne)! - Double(operandTwo)!)
-            case "*":
-              result = String(Double(operandOne)!*Double(operandTwo)!)
-            case "/":
-              if operandTwo == "0"
-              {
-                result = "Cannot / by 0"
-              }
-              else
-              {
-                result = String(Double(operandOne)!/Double(operandTwo)!)
-              }
-            default: break
-          }
-        case Actions.plusMinusTapped: result = String(Double(result)! * -1.0)
-        case Actions.sqrtTapped: result = String(sqrt(Double(result)!))
-        case Actions.clearTapped: result = "0"
-        case Actions.percentTapped: result = String(Double(result)! * 100)
-      default: break
-      }
+      store.dispatch(action: Actions.operandTwoTapped)
+      state.number = ""
     }
   }
 }
