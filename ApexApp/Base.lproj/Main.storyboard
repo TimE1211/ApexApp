@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApexApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ViewController" customModule="ApexApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZG-op-WYb">
+                                <rect key="frame" x="55" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-p8-Ldg">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-i7-8QL">
+                                <rect key="frame" x="295" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVS-Ce-3aD">
+                                <rect key="frame" x="164" y="175" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="width" secondItem="OfG-i7-8QL" secondAttribute="width" id="2d7-0H-yo4"/>
+                            <constraint firstItem="sZG-op-WYb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5J6-vC-BDv"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="top" secondItem="IVS-Ce-3aD" secondAttribute="bottom" constant="113" id="DJi-jT-Pl7"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KAW-At-VfI"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="height" secondItem="OfG-i7-8QL" secondAttribute="height" id="M6c-ob-5vz"/>
+                            <constraint firstItem="OfG-i7-8QL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="igh-XR-17a"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="leading" secondItem="sZG-op-WYb" secondAttribute="trailing" constant="63" id="npU-Lp-h5W"/>
+                            <constraint firstItem="OfG-i7-8QL" firstAttribute="leading" secondItem="vlv-p8-Ldg" secondAttribute="trailing" constant="85" id="pno-dQ-H4E"/>
+                            <constraint firstItem="IVS-Ce-3aD" firstAttribute="width" secondItem="vlv-p8-Ldg" secondAttribute="width" id="rzL-R6-cSa"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tna-LE-lke"/>
+                            <constraint firstItem="sZG-op-WYb" firstAttribute="width" secondItem="vlv-p8-Ldg" secondAttribute="width" id="tub-Ax-EtE"/>
+                            <constraint firstItem="IVS-Ce-3aD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uUM-xT-Ra6"/>
+                            <constraint firstItem="IVS-Ce-3aD" firstAttribute="height" secondItem="vlv-p8-Ldg" secondAttribute="height" id="uZh-cL-KxS"/>
+                            <constraint firstItem="sZG-op-WYb" firstAttribute="height" secondItem="vlv-p8-Ldg" secondAttribute="height" id="xYM-r1-dx2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="equalsButton" destination="OfG-i7-8QL" id="v4R-jP-CjL"/>
+                        <outlet property="minusButton" destination="vlv-p8-Ldg" id="lem-ED-cVZ"/>
+                        <outlet property="plusButton" destination="sZG-op-WYb" id="HW8-SR-7bB"/>
+                        <outlet property="resultLabel" destination="IVS-Ce-3aD" id="jOv-Bx-eNX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

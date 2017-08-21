@@ -1,0 +1,21 @@
+PODS:
+  - Apex (2.0.0)
+
+DEPENDENCIES:
+  - Apex (from `https://github.com/dtartaglia/Apex`)
+
+EXTERNAL SOURCES:
+  Apex:
+    :git: https://github.com/dtartaglia/Apex
+
+CHECKOUT OPTIONS:
+  Apex:
+    :commit: 9536da548d545838f5c8c80dc703821f0ba5e809
+    :git: https://github.com/dtartaglia/Apex
+
+SPEC CHECKSUMS:
+  Apex: 6c108e776f8c98341513b3dcc722c1de3aa112ea
+
+PODFILE CHECKSUM: 9fb219579d025391862d165bf8a37530556eebb4
+
+COCOAPODS: 1.2.1
