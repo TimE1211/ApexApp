@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZG-op-WYb">
-                                <rect key="frame" x="55" y="318" width="46" height="30"/>
+                                <rect key="frame" x="58" y="318" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-p8-Ldg">
@@ -30,11 +30,11 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-i7-8QL">
-                                <rect key="frame" x="295" y="318" width="46" height="30"/>
+                                <rect key="frame" x="270" y="318" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVS-Ce-3aD">
-                                <rect key="frame" x="164" y="175" width="46" height="30"/>
+                                <rect key="frame" x="164" y="188" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,12 +44,12 @@
                         <constraints>
                             <constraint firstItem="vlv-p8-Ldg" firstAttribute="width" secondItem="OfG-i7-8QL" secondAttribute="width" id="2d7-0H-yo4"/>
                             <constraint firstItem="sZG-op-WYb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5J6-vC-BDv"/>
-                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="top" secondItem="IVS-Ce-3aD" secondAttribute="bottom" constant="113" id="DJi-jT-Pl7"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="top" secondItem="IVS-Ce-3aD" secondAttribute="bottom" constant="100" id="DJi-jT-Pl7"/>
                             <constraint firstItem="vlv-p8-Ldg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KAW-At-VfI"/>
                             <constraint firstItem="vlv-p8-Ldg" firstAttribute="height" secondItem="OfG-i7-8QL" secondAttribute="height" id="M6c-ob-5vz"/>
                             <constraint firstItem="OfG-i7-8QL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="igh-XR-17a"/>
-                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="leading" secondItem="sZG-op-WYb" secondAttribute="trailing" constant="63" id="npU-Lp-h5W"/>
-                            <constraint firstItem="OfG-i7-8QL" firstAttribute="leading" secondItem="vlv-p8-Ldg" secondAttribute="trailing" constant="85" id="pno-dQ-H4E"/>
+                            <constraint firstItem="vlv-p8-Ldg" firstAttribute="leading" secondItem="sZG-op-WYb" secondAttribute="trailing" constant="60" id="npU-Lp-h5W"/>
+                            <constraint firstItem="OfG-i7-8QL" firstAttribute="leading" secondItem="vlv-p8-Ldg" secondAttribute="trailing" constant="60" id="pno-dQ-H4E"/>
                             <constraint firstItem="IVS-Ce-3aD" firstAttribute="width" secondItem="vlv-p8-Ldg" secondAttribute="width" id="rzL-R6-cSa"/>
                             <constraint firstItem="vlv-p8-Ldg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tna-LE-lke"/>
                             <constraint firstItem="sZG-op-WYb" firstAttribute="width" secondItem="vlv-p8-Ldg" secondAttribute="width" id="tub-Ax-EtE"/>

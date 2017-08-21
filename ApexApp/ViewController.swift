@@ -11,7 +11,10 @@ import Apex
 
 class ViewController: UIViewController
 {
-  var store: Store<CalculatorBrain>!
+  lazy var store: Store<CalculatorBrain> = {
+    return Store(state: self.state)
+  }()
+  let state = CalculatorBrain()
   
   @IBOutlet weak var plusButton: UIButton!
   @IBOutlet weak var minusButton: UIButton!
@@ -35,45 +38,60 @@ class ViewController: UIViewController
     plusButton.setTitle("+", for: .normal)
     minusButton.setTitle("-", for: .normal)
     equalsButton.setTitle("=", for: .normal)
+    resultLabel.text = "0"
   }
   
   func buttonTapped(_ sender: UIButton)
   {
     switch sender
     {
-    case plusButton: store.dispatch(action: plusTapped())
-    case minusButton: store.dispatch(action: minusTapped())
-    case equalsButton: store.dispatch(action: equalsTapped())
+    case plusButton: store.dispatch(action: Actions.plusTapped)
+    case minusButton: store.dispatch(action: Actions.minusTapped)
+    case equalsButton: store.dispatch(action: Actions.equalsTapped)
     default: break
     }
   }
 }
 
-struct plusTapped: Action{}
-struct minusTapped: Action{}
-struct equalsTapped: Action{}
-
-struct CalculatorBrain: State
+extension ViewController
 {
-  var operandOne = "1"
-  var operandTwo = "2"
-  var operationSymbol = String()
-  var result = String()
-  
-  mutating func calculate()
-  {
-    result = operandOne + operationSymbol + operandTwo
-    print(result)
+  enum Actions: Action {
+    case plusTapped
+    case minusTapped
+    case equalsTapped
   }
-  
-  mutating func transition(_ action: Action)
+}
+
+extension ViewController
+{
+  struct CalculatorBrain: State
   {
-    switch action
-    {
-    case is plusTapped: operationSymbol = "+"
-    case is minusTapped: operationSymbol = "-"
-    case is equalsTapped: calculate()
-    default: break
+    var operandOne = 1.0
+    var operandTwo = 2.0
+    var result = 0.0
+    
+    mutating func transition(_ action: Action) {
+      switch action
+      {
+      case Actions.plusTapped:
+        result = operandOne + operandTwo
+      case Actions.minusTapped:
+        result = operandOne - operandTwo
+        //      case "*":
+        //        result = String(operandOne * operandTwo)
+        //      case "/":
+        //        if operandTwo == 0
+        //        {
+        //          result = "Cannot / by 0"
+        //        }
+        //        else
+        //        {
+        //          result = String(operandOne / operandTwo)
+      //        }
+      default:
+        result = 0.0
+      }
+      print(result)
     }
   }
 }
