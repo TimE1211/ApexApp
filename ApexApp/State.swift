@@ -17,14 +17,16 @@ struct CurrentState: State {
   
   mutating func transition(_ action: Action)
   {
-    guard var result = Double(self.result) else { return }
+    var result = Double(self.result) ?? 0
     
     switch action {
     case Actions.operandTapped(let numberString):
       if operatorSymbol == "" {
         operandOne += numberString
+        result = Double(operandOne) ?? 0
       } else {
         operandTwo += numberString
+        result = Double(operandTwo) ?? 0
       }
     case Actions.operatorTapped(let operatorOption):
       switch operatorOption {
@@ -39,11 +41,9 @@ struct CurrentState: State {
       case .percent:
         result *= 100
       case .equals:
-        guard let operandOne = Double(self.operandOne),
-          let operandTwo = Double(self.operandTwo) else {
-            fatalError()
-        }
-        
+        var operandOne = Double(self.operandOne) ?? 0
+        var operandTwo = Double(self.operandTwo) ?? 0
+      
         switch operatorSymbol {
         case "+": result = operandOne + operandTwo
         case "-": result = operandOne - operandTwo
@@ -56,11 +56,13 @@ struct CurrentState: State {
           }
         default: break
         }
-        
       }
     default: break
     }
     
     self.result = String(result)
+    self.operandOne = String(result)
+    self.operandTwo = "0"
+    result = 0
   }
 }
