@@ -14,12 +14,12 @@ import Apex
 
 enum Actions: Action
 {
-  case operandTapped(String)        //associated values in enums
+  case operandTapped(String)
   
   case operatorTapped(Operator)
 }
 
-enum Operator: String
+enum Operator: String     //associated values in enums
 {
   case add = "+"
   case subtract = "-"

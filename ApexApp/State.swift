@@ -10,10 +10,10 @@ import Foundation
 import Apex
 
 struct CurrentState: State {
-  var operandOne = "0"
-  var operandTwo = "0"
+  var operandOne = ""
+  var operandTwo = ""
   var operatorSymbol = ""
-  var result = "0"
+  var result = ""
   
   mutating func transition(_ action: Action)
   {
@@ -32,6 +32,10 @@ struct CurrentState: State {
       switch operatorOption {
       case .add, .subtract, .multiply, .divide:
         operatorSymbol = operatorOption.rawValue
+        
+        print(operatorSymbol)
+        result = Double(operatorSymbol) ?? 0
+        
       case .plusMinus:
         result *= -1
       case .squareRoot:
@@ -40,6 +44,7 @@ struct CurrentState: State {
         result = 0
       case .percent:
         result *= 100
+        
       case .equals:
         var operandOne = Double(self.operandOne) ?? 0
         var operandTwo = Double(self.operandTwo) ?? 0
@@ -56,13 +61,12 @@ struct CurrentState: State {
           }
         default: break
         }
+        self.operandOne = String(result)
+        self.operandTwo = "0"
       }
     default: break
     }
     
     self.result = String(result)
-    self.operandOne = String(result)
-    self.operandTwo = "0"
-    result = 0
   }
 }
