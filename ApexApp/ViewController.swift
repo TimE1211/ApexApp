@@ -50,51 +50,46 @@ class CalculatorViewController: UIViewController
   {
     super.viewDidLoad()
     
-    store = Store(state: CurrentState())
-    store.subscribe {
-        [unowned self] CurrentState in
-      self.resultLabel.text = String(CurrentState.result)
-      }.unsubscribed(by: &unsubscribers)
-    
     resultLabel.text = "0"
-  }
-
-  @IBAction func operationSymbolTapped(_ sender: UIButton)
-  {
-    switch sender
-    {
-      case addButton: store.dispatch(action: Actions.addTapped)
-      case subtractButton: store.dispatch(action: Actions.subtractTapped)
-      case equalsButton: store.dispatch(action: Actions.equalsTapped)
-      case multiplyButton: store.dispatch(action: Actions.multiplyTapped)
-      case divideButton: store.dispatch(action: Actions.divideTapped)
-      
-      case plusMinusButton: store.dispatch(action: Actions.plusMinusTapped)
-      case sqrtButton: store.dispatch(action: Actions.sqrtTapped)
-      case clearButton: store.dispatch(action: Actions.clearTapped)
-      case percentButton: store.dispatch(action: Actions.percentTapped)
-      default: break
-    }
-  }
-  @IBAction func operandTapped(sender: UIButton)
-  {
-    state.number = sender.currentTitle!
     
-    if state.operationSymbol == ""
-    {
-      store.dispatch(action: Actions.operandOneTapped)
+    store = Store(state: CurrentState())
+    store.subscribe { [unowned self] state in
+      self.resultLabel.text = state.result
+      }.unsubscribed(by: &unsubscribers)
+  }
+  
+  @IBAction func operationSymbolTapped(_ sender: UIButton) {
+    switch sender {
+    case addButton:
+      store.dispatch(action: Actions.operatorTapped(.add))
+    case subtractButton:
+      store.dispatch(action: Actions.operatorTapped(.subtract))
+    case equalsButton:
+      store.dispatch(action: Actions.operatorTapped(.equals))
+    case multiplyButton:
+      store.dispatch(action: Actions.operatorTapped(.multiply))
+    case divideButton:
+      store.dispatch(action: Actions.operatorTapped(.divide))
+    case plusMinusButton:
+      store.dispatch(action: Actions.operatorTapped(.plusMinus))
+    case sqrtButton:
+      store.dispatch(action: Actions.operatorTapped(.squareRoot))
+    case clearButton:
+      store.dispatch(action: Actions.operatorTapped(.clear))
+    case percentButton:
+      store.dispatch(action: Actions.operatorTapped(.percent))
+    default: break
     }
-    else
-    {
-      store.dispatch(action: Actions.operandTwoTapped)
-    }
+  }
+  
+  @IBAction func operandTapped(sender: UIButton) {
+    guard let numberString = sender.currentTitle else { return }
+    store.dispatch(action: Actions.operandTapped(numberString))
   }
 }
 
-extension Unsubscriber
-{
-  func unsubscribed(by unsubscribers: inout [Unsubscriber])
-  {
+extension Unsubscriber {
+  func unsubscribed(by unsubscribers: inout [Unsubscriber]) {
     unsubscribers.append(self)
   }
 }

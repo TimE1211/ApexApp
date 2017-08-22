@@ -9,52 +9,57 @@
 import Foundation
 import Apex
 
-struct CurrentState: State
-{
+struct CurrentState: State {
   var operandOne = ""
   var operandTwo = ""
-  var operationSymbol = ""
+  var operatorSymbol = ""
   var result = ""
-  var number = ""
   
   mutating func transition(_ action: Action)
   {
-    switch action
-    {
-    case Actions.operandOneTapped: operandOne += number
-    case Actions.operandTwoTapped: operandTwo += number
-      
-      
-      case Actions.addTapped: operationSymbol = "+"
-      case Actions.subtractTapped: operationSymbol = "-"
-      case Actions.multiplyTapped: operationSymbol = "*"
-      case Actions.divideTapped: operationSymbol = "/"
+    guard var result = Double(self.result) else { return }
+    
+    switch action {
+    case Actions.operandTapped(let numberString):
+      if operatorSymbol == "" {
+        operandOne += numberString
+      } else {
+        operandTwo += numberString
+      }
+    case Actions.operatorTapped(let operatorOption):
+      switch operatorOption {
+      case .add, .subtract, .multiply, .divide:
+        operatorSymbol = operatorOption.rawValue
+      case .plusMinus:
+        result *= -1
+      case .squareRoot:
+        result = sqrt(result)
+      case .clear:
+        result = 0
+      case .percent:
+        result *= 100
+      case .equals:
+        guard let operandOne = Double(self.operandOne),
+          let operandTwo = Double(self.operandTwo) else {
+            fatalError()
+        }
         
-      case Actions.equalsTapped:
-        switch operationSymbol
-        {
-        case "+":
-          result = String(Double(operandOne)! + Double(operandTwo)!)
-        case "-":
-          result = String(Double(operandOne)! - Double(operandTwo)!)
-        case "*":
-          result = String(Double(operandOne)!*Double(operandTwo)!)
+        switch operatorSymbol {
+        case "+": result = operandOne + operandTwo
+        case "-": result = operandOne - operandTwo
+        case "*": result = operandOne * operandTwo
         case "/":
-          if operandTwo == "0"
-          {
-            result = "Cannot / by 0"
-          }
-          else
-          {
-            result = String(Double(operandOne)!/Double(operandTwo)!)
+          if operandTwo == 0 {
+            defer { self.result = "Cannot / by 0" }
+          } else {
+            result = operandOne / operandTwo
           }
         default: break
         }
-      case Actions.plusMinusTapped: result = String(Double(result)! * -1.0)
-      case Actions.sqrtTapped: result = String(sqrt(Double(result)!))
-      case Actions.clearTapped: result = "0"
-      case Actions.percentTapped: result = String(Double(result)! * 100)
-      default: break
+      }
+    default: break
     }
+    
+    self.result = String(result)
   }
 }

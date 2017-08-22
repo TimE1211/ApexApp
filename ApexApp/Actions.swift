@@ -9,19 +9,27 @@
 import Foundation
 import Apex
 
+import Foundation
+import Apex
+
 enum Actions: Action
 {
-  case operandOneTapped
-  case operandTwoTapped
+  case operandTapped(String)        //associated values in enums
   
-  case addTapped
-  case subtractTapped
-  case equalsTapped
-  case multiplyTapped
-  case divideTapped
+  case operatorTapped(Operator)
+}
+
+enum Operator: String
+{
+  case add = "+"
+  case subtract = "-"
+  case equals
+  case multiply = "*"
+  case divide = "/"
   
-  case plusMinusTapped
-  case sqrtTapped
-  case clearTapped
-  case percentTapped
+  case plusMinus
+  case squareRoot
+  case percent
+  
+  case clear
 }
