@@ -10,10 +10,10 @@ import Foundation
 import Apex
 
 struct CurrentState: State {
-  var operandOne = ""
-  var operandTwo = ""
+  var operandOne = "0"
+  var operandTwo = "0"
   var operatorSymbol = ""
-  var result = ""
+  var result = "0"
   
   mutating func transition(_ action: Action)
   {
@@ -56,6 +56,7 @@ struct CurrentState: State {
           }
         default: break
         }
+        
       }
     default: break
     }
