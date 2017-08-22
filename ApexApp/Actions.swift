@@ -23,13 +23,13 @@ enum Operator: String     //associated values in enums
 {
   case add = "+"
   case subtract = "-"
-  case equals
+  case equals = "="
   case multiply = "*"
   case divide = "/"
   
-  case plusMinus
-  case squareRoot
-  case percent
+  case plusMinus = "+/-"
+  case squareRoot = "√"
+  case percent = "%"
   
-  case clear
+  case clear = "C"
 }

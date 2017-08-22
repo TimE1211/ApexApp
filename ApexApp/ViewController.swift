@@ -18,6 +18,7 @@ class CalculatorViewController: UIViewController
   var state = CurrentState()
   
   @IBOutlet weak var resultLabel: UILabel!
+  @IBOutlet weak var operationSymbolLabel: UILabel!
   
   @IBOutlet weak var clearButton: UIButton!
   @IBOutlet weak var plusMinusButton: UIButton!
@@ -55,6 +56,7 @@ class CalculatorViewController: UIViewController
     store = Store(state: CurrentState())
     store.subscribe { [unowned self] state in
       self.resultLabel.text = state.result
+      self.operationSymbolLabel.text = state.operatorSymbol
       }.unsubscribed(by: &unsubscribers)
   }
   

@@ -30,21 +30,9 @@ struct CurrentState: State {
       }
     case Actions.operatorTapped(let operatorOption):
       switch operatorOption {
-      case .add, .subtract, .multiply, .divide:
+      case .add, .subtract, .multiply, .divide, .plusMinus, .squareRoot, .percent:
         operatorSymbol = operatorOption.rawValue
-        
-        print(operatorSymbol)
-        result = Double(operatorSymbol) ?? 0
-        
-      case .plusMinus:
-        result *= -1
-      case .squareRoot:
-        result = sqrt(result)
-      case .clear:
-        result = 0
-      case .percent:
-        result *= 100
-        
+      case .clear: result = 0
       case .equals:
         var operandOne = Double(self.operandOne) ?? 0
         var operandTwo = Double(self.operandTwo) ?? 0
@@ -59,6 +47,9 @@ struct CurrentState: State {
           } else {
             result = operandOne / operandTwo
           }
+        case "+/-": result *= -1
+        case "√": result = sqrt(result)
+        case "%": result *= 100
         default: break
         }
         self.operandOne = String(result)
@@ -66,7 +57,6 @@ struct CurrentState: State {
       }
     default: break
     }
-    
     self.result = String(result)
   }
 }
