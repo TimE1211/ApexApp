@@ -13,50 +13,53 @@ struct CurrentState: State {
   var operandOne = ""
   var operandTwo = ""
   var operatorSymbol = ""
-  var result = ""
+  var output = ""
+  var result = "" {
+    didSet {       self.operandOne = String(result)
+      self.operandTwo = ""
+      self.operatorSymbol = ""
+      output = result }
+  }
   
   mutating func transition(_ action: Action)
   {
-    var result = Double(self.result) ?? 0
+    var result = Double(self.output) ?? 0
     
     switch action {
     case Actions.operandTapped(let numberString):
       if operatorSymbol == "" {
         operandOne += numberString
-        result = Double(operandOne) ?? 0
+        output = operandOne
       } else {
         operandTwo += numberString
-        result = Double(operandTwo) ?? 0
+        output = operandTwo
       }
     case Actions.operatorTapped(let operatorOption):
       switch operatorOption {
-      case .add, .subtract, .multiply, .divide, .plusMinus, .squareRoot, .percent:
+      case .add, .subtract, .multiply, .divide:
         operatorSymbol = operatorOption.rawValue
       case .clear: result = 0
-      case .equals:
-        var operandOne = Double(self.operandOne) ?? 0
-        var operandTwo = Double(self.operandTwo) ?? 0
-      
+        self.result = String("")
+      case .plusMinus: result *= -1
+        self.result = String(result)
+      case .squareRoot: result = sqrt(result)
+        self.result = String(result)
+      case .percent: result *= 100
+        self.result = String(result)
+      case .equals: let operandOne = Double(self.operandOne) ?? 0
+        let operandTwo = Double(self.operandTwo) ?? 0
+
         switch operatorSymbol {
         case "+": result = operandOne + operandTwo
         case "-": result = operandOne - operandTwo
         case "*": result = operandOne * operandTwo
         case "/":
-          if operandTwo == 0 {
-            defer { self.result = "Cannot / by 0" }
-          } else {
-            result = operandOne / operandTwo
-          }
-        case "+/-": result *= -1
-        case "√": result = sqrt(result)
-        case "%": result *= 100
+          if operandTwo != 0 { result = operandOne / operandTwo }
         default: break
         }
-        self.operandOne = String(result)
-        self.operandTwo = "0"
+        self.result = String(result)
       }
     default: break
     }
-    self.result = String(result)
   }
 }

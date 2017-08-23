@@ -55,7 +55,7 @@ class CalculatorViewController: UIViewController
     
     store = Store(state: CurrentState())
     store.subscribe { [unowned self] state in
-      self.resultLabel.text = state.result
+      self.resultLabel.text = state.output
       self.operationSymbolLabel.text = state.operatorSymbol
       }.unsubscribed(by: &unsubscribers)
   }
