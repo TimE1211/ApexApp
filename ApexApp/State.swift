@@ -2,8 +2,8 @@
 //  State.swift
 //  ApexApp
 //
-//  Created by Timothy Hang on 8/21/17.
-//  Copyright © 2017 Timothy Hang. All rights reserved.
+//  Created by Timothy Hang on 8/Two1/17.
+//  Copyright © Two017 Timothy Hang. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,8 @@ struct CurrentState: State {
   var operatorSymbol = ""
   var output = ""
   var result = "" {
-    didSet {       self.operandOne = String(result)
+    didSet {
+      self.operandOne = String(result)
       self.operandTwo = ""
       self.operatorSymbol = ""
       output = result }
@@ -40,8 +41,15 @@ struct CurrentState: State {
         operatorSymbol = operatorOption.rawValue
       case .clear: result = 0
         self.result = String("")
-      case .plusMinus: result *= -1
-        self.result = String(result)
+      case .plusMinus:
+        if operandOne != "" && operandTwo == "" && operatorSymbol == "" {
+        operandOne = String(Double(operandOne)! * -1)
+        output = operandOne
+        } else {
+        operandTwo = String(Double(operandTwo)! * -1)
+        output = operandTwo
+        }
+      
       case .squareRoot: result = sqrt(result)
         self.result = String(result)
       case .percent: result *= 100
@@ -55,6 +63,7 @@ struct CurrentState: State {
         case "*": result = operandOne * operandTwo
         case "/":
           if operandTwo != 0 { result = operandOne / operandTwo }
+//          else { defer { self.output = "Cannot divide by 0" } }
         default: break
         }
         self.result = String(result)

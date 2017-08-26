@@ -17,8 +17,8 @@ class ApexAppTests: XCTestCase {
 		store.dispatch(action: Actions.operandTapped("5"))
 		store.dispatch(action: Actions.operatorTapped(.multiply))
 		store.dispatch(action: Actions.operandTapped("3"))
-    store.dispatch(action: Actions.operatorTapped(.equals))
 		store.dispatch(action: Actions.operatorTapped(.plusMinus))
+    store.dispatch(action: Actions.operatorTapped(.equals))
 		
 		_ = store.subscribe { state in
 			XCTAssertEqual(state.output, "-15.0")
@@ -35,7 +35,22 @@ class ApexAppTests: XCTestCase {
     
     _ = store.subscribe { state in
       XCTAssertEqual(state.output, "")
+      XCTAssertEqual(state.operandOne, "")
+      XCTAssertEqual(state.operandTwo, "")
+      XCTAssertEqual(state.operatorSymbol, "")
     }
   }
+  
+//  func testDivideByZero() {
+//    let store = Store<CurrentState>(state: CurrentState())
+//    store.dispatch(action: Actions.operandTapped("1"))
+//    store.dispatch(action: Actions.operatorTapped(.divide))
+//    store.dispatch(action: Actions.operandTapped("0"))
+//    store.dispatch(action: Actions.operatorTapped(.equals))
+//    
+//    _ = store.subscribe { state in
+//      XCTAssertEqual(state.output, "Cannot divide by 0")
+//    }
+//  }
 	
 }

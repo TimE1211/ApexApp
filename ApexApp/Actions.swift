@@ -27,9 +27,9 @@ enum Operator: String     //associated values in enums
   case multiply = "*"
   case divide = "/"
   
-  case plusMinus = "+/-"
-  case squareRoot = "√"
-  case percent = "%"
+  case plusMinus
+  case squareRoot
+  case percent
   
-  case clear = "C"
+  case clear
 }
