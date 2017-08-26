@@ -1,6 +1,9 @@
-target 'ApexApp' do
-  
+target 'ApexApp' do  
   use_frameworks!
-  pod 'Apex', :git => 'https://github.com/dtartaglia/Apex'
+  pod 'Apex', '~> 2.0'
+end
 
+target 'ApexAppTests' do
+	use_frameworks!
+	pod 'Apex', '~> 2.0'
 end
