@@ -14,10 +14,23 @@
 		20F3EE7D1F3BFB8C00BCA183 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F3EE7B1F3BFB8C00BCA183 /* Main.storyboard */; };
 		20F3EE7F1F3BFB8C00BCA183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F3EE7E1F3BFB8C00BCA183 /* Assets.xcassets */; };
 		20F3EE821F3BFB8C00BCA183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F3EE801F3BFB8C00BCA183 /* LaunchScreen.storyboard */; };
+		417CFE76828FF91E200AD491 /* Pods_ApexAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425A80D5CA44722696299B48 /* Pods_ApexAppTests.framework */; };
+		7265B1D71F50F8EC00F03B98 /* ApexAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7265B1D61F50F8EC00F03B98 /* ApexAppTests.swift */; };
 		856341ABCF2164D2B9558CAA /* Pods_ApexApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2EE75EDD145C4760C6203E /* Pods_ApexApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7265B1D91F50F8EC00F03B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F3EE6C1F3BFB8C00BCA183 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20F3EE731F3BFB8C00BCA183;
+			remoteInfo = ApexApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		086166C75F704CCFC79C5858 /* Pods-ApexAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApexAppTests/Pods-ApexAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		205E40561F4B94B000E3D369 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		205E405A1F4B950600E3D369 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		20F3EE741F3BFB8C00BCA183 /* ApexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,7 +41,12 @@
 		20F3EE811F3BFB8C00BCA183 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F3EE831F3BFB8C00BCA183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C2EE75EDD145C4760C6203E /* Pods_ApexApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApexApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		425A80D5CA44722696299B48 /* Pods_ApexAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApexAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7265B1D41F50F8EC00F03B98 /* ApexAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApexAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7265B1D61F50F8EC00F03B98 /* ApexAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexAppTests.swift; sourceTree = "<group>"; };
+		7265B1D81F50F8EC00F03B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8014FBC4C1266EC451B748BA /* Pods-ApexApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApexApp/Pods-ApexApp.release.xcconfig"; sourceTree = "<group>"; };
+		A7911743BD2D8CFF152CA293 /* Pods-ApexAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApexAppTests/Pods-ApexAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBCD28EE311661C11C01F5B5 /* Pods-ApexApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApexApp/Pods-ApexApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +59,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7265B1D11F50F8EC00F03B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417CFE76828FF91E200AD491 /* Pods_ApexAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				20F3EE761F3BFB8C00BCA183 /* ApexApp */,
+				7265B1D51F50F8EC00F03B98 /* ApexAppTests */,
 				20F3EE751F3BFB8C00BCA183 /* Products */,
 				93CD8FB5772212D9B326E11C /* Pods */,
 				23CF66A56B7327FE9259A6D2 /* Frameworks */,
@@ -58,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				20F3EE741F3BFB8C00BCA183 /* ApexApp.app */,
+				7265B1D41F50F8EC00F03B98 /* ApexAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,8 +109,18 @@
 			isa = PBXGroup;
 			children = (
 				3C2EE75EDD145C4760C6203E /* Pods_ApexApp.framework */,
+				425A80D5CA44722696299B48 /* Pods_ApexAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7265B1D51F50F8EC00F03B98 /* ApexAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7265B1D61F50F8EC00F03B98 /* ApexAppTests.swift */,
+				7265B1D81F50F8EC00F03B98 /* Info.plist */,
+			);
+			path = ApexAppTests;
 			sourceTree = "<group>";
 		};
 		93CD8FB5772212D9B326E11C /* Pods */ = {
@@ -90,6 +128,8 @@
 			children = (
 				CBCD28EE311661C11C01F5B5 /* Pods-ApexApp.debug.xcconfig */,
 				8014FBC4C1266EC451B748BA /* Pods-ApexApp.release.xcconfig */,
+				A7911743BD2D8CFF152CA293 /* Pods-ApexAppTests.debug.xcconfig */,
+				086166C75F704CCFC79C5858 /* Pods-ApexAppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -117,6 +157,27 @@
 			productReference = 20F3EE741F3BFB8C00BCA183 /* ApexApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7265B1D31F50F8EC00F03B98 /* ApexAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7265B1DD1F50F8EC00F03B98 /* Build configuration list for PBXNativeTarget "ApexAppTests" */;
+			buildPhases = (
+				A1E2E1BBE57D6DEBCE9967FB /* [CP] Check Pods Manifest.lock */,
+				7265B1D01F50F8EC00F03B98 /* Sources */,
+				7265B1D11F50F8EC00F03B98 /* Frameworks */,
+				7265B1D21F50F8EC00F03B98 /* Resources */,
+				57A9A436A6784261A5946A50 /* [CP] Embed Pods Frameworks */,
+				3A9ED06D3ADD670BB8E955DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7265B1DA1F50F8EC00F03B98 /* PBXTargetDependency */,
+			);
+			name = ApexAppTests;
+			productName = ApexAppTests;
+			productReference = 7265B1D41F50F8EC00F03B98 /* ApexAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +192,12 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 852TDXMVWN;
 						ProvisioningStyle = Automatic;
+					};
+					7265B1D31F50F8EC00F03B98 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XA4HQLH76F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20F3EE731F3BFB8C00BCA183;
 					};
 				};
 			};
@@ -148,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				20F3EE731F3BFB8C00BCA183 /* ApexApp */,
+				7265B1D31F50F8EC00F03B98 /* ApexAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -163,9 +231,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7265B1D21F50F8EC00F03B98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A9ED06D3ADD670BB8E955DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApexAppTests/Pods-ApexAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3E41D6C62E59B869F3A2A5C8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +271,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApexApp/Pods-ApexApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		57A9A436A6784261A5946A50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApexAppTests/Pods-ApexAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E63C9265C8E05E5D7CAA14B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +299,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApexApp/Pods-ApexApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E2E1BBE57D6DEBCE9967FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D696B5628BC71E8EC09F656B /* [CP] Check Pods Manifest.lock */ = {
@@ -225,7 +345,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7265B1D01F50F8EC00F03B98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7265B1D71F50F8EC00F03B98 /* ApexAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7265B1DA1F50F8EC00F03B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20F3EE731F3BFB8C00BCA183 /* ApexApp */;
+			targetProxy = 7265B1D91F50F8EC00F03B98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		20F3EE7B1F3BFB8C00BCA183 /* Main.storyboard */ = {
@@ -368,6 +504,36 @@
 			};
 			name = Release;
 		};
+		7265B1DB1F50F8EC00F03B98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7911743BD2D8CFF152CA293 /* Pods-ApexAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XA4HQLH76F;
+				INFOPLIST_FILE = ApexAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.ApexAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApexApp.app/ApexApp";
+			};
+			name = Debug;
+		};
+		7265B1DC1F50F8EC00F03B98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086166C75F704CCFC79C5858 /* Pods-ApexAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XA4HQLH76F;
+				INFOPLIST_FILE = ApexAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.danielt1263.ApexAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApexApp.app/ApexApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -388,6 +554,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7265B1DD1F50F8EC00F03B98 /* Build configuration list for PBXNativeTarget "ApexAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7265B1DB1F50F8EC00F03B98 /* Debug */,
+				7265B1DC1F50F8EC00F03B98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

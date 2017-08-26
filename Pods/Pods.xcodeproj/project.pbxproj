@@ -14,10 +14,13 @@
 		337CB6DF8212BB9782603C937A1F3949 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		369F09C89FBB823B927971E69248DFD0 /* Apex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6CCB3053224C54FD9642147F05B0F8 /* Apex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50CC0F1667CA8E7471E853399CB8879A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6A27FB5288EF17A60FEE5C8F15EA8D60 /* Pods-ApexApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 532CF383BD3829E1A55F357497F83DA3 /* Pods-ApexApp-dummy.m */; };
+		6A27FB5288EF17A60FEE5C8F15EA8D60 /* Pods-ApexApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E171A55DDB01A5173B5BB005C0881E /* Pods-ApexApp-dummy.m */; };
 		6D61A0403872125787B9E003127C0CE7 /* PopPushAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688656625DA98446B9F514DCD59BDE7 /* PopPushAlgorithm.swift */; };
-		9739128D1BC1071AD270FC1D849FBA94 /* Pods-ApexApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F9ADAB6B7A7A15BD18E18386ADA896 /* Pods-ApexApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9739128D1BC1071AD270FC1D849FBA94 /* Pods-ApexApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 930264295B61EDA65D8D56CB5E542F87 /* Pods-ApexApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C936EC2C39808315951E478A65837AE7 /* CommandComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E1AC322C1BCB045D0D4DAE51EA2B9 /* CommandComponent.swift */; };
+		DA959FA4CD59630B41BB477B21EA6418 /* Pods-ApexAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7E27E4D05307A2F12E706C5AB6EE3E /* Pods-ApexAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D57C2E9C9881EB97BC8E35CADE4D67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FAEC5A12A77AB7983C6AB89F1D6F796D /* Pods-ApexAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F238867D7CA5A413B627AA8D2E5957 /* Pods-ApexAppTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,37 +31,63 @@
 			remoteGlobalIDString = 304F514E483ACFCC2A077B9ADBB3F1ED;
 			remoteInfo = Apex;
 		};
+		B1A8FF24F1907343F398BF2135A60E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 304F514E483ACFCC2A077B9ADBB3F1ED;
+			remoteInfo = Apex;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21E70A0F5566C8435035AD52093C3A09 /* Pods-ApexApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApexApp.release.xcconfig"; sourceTree = "<group>"; };
+		0E39D29B53B3392C3DD2B51D75A653FC /* Pods-ApexApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApexApp-resources.sh"; sourceTree = "<group>"; };
+		0FDFC3F7FAF198C4E83DD5F29C44F1E8 /* Pods-ApexAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ApexAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		192DF4496F3ABBB009985AFFBCF590A6 /* Pods-ApexAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ApexAppTests.modulemap"; sourceTree = "<group>"; };
 		263F76C18AFF9B8D9AFCD9CDB03476E0 /* Apex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apex.xcconfig; sourceTree = "<group>"; };
 		294CC866634A4A2FDBD20176E30A136A /* URLRequestComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequestComponent.swift; path = Apex/URLRequestComponent.swift; sourceTree = "<group>"; };
-		41B648FA960B4B1DBADECF64E87E65D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		469BAB7D83A5D28CD76707B929015625 /* Pods-ApexApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApexApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2953C50AABD2CB1CB544B301D06CECD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376E6E6C6BB5F0A1C967D66FB6903D14 /* Pods-ApexAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApexAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A56CFE6860957F6C04971989CAC84DD /* Pods_ApexApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ApexApp.framework; path = "Pods-ApexApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6CCB3053224C54FD9642147F05B0F8 /* Apex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apex-umbrella.h"; sourceTree = "<group>"; };
-		532CF383BD3829E1A55F357497F83DA3 /* Pods-ApexApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ApexApp-dummy.m"; sourceTree = "<group>"; };
-		584E7A08CE5B1AFE341E307834947E02 /* Apex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apex.framework; path = Apex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58D070488A0582F5EDA9BD1F69E70380 /* Pods-ApexApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApexApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		59895FA0360C79B40880E3F2D7756A46 /* Apex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apex-dummy.m"; sourceTree = "<group>"; };
+		64FD708EF654C99C11F916E7757A34C8 /* Pods-ApexApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApexApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6ABE94B0DFA9AC44BF5998BC840AF438 /* Pods-ApexApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApexApp-frameworks.sh"; sourceTree = "<group>"; };
-		7BAB5D3A9994030CD965BF6CE5AB7462 /* Pods-ApexApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApexApp-resources.sh"; sourceTree = "<group>"; };
+		7107C08D927873E0E792A68B29F22207 /* Pods-ApexAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApexAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		767088CB8216BD5951D802990740A068 /* Pods-ApexApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApexApp-frameworks.sh"; sourceTree = "<group>"; };
 		7C0845D128E7F060F8CA027EABEA316C /* Apex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Apex.modulemap; sourceTree = "<group>"; };
-		812483D1C348F192E9C4955C550258AD /* Pods_ApexApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ApexApp.framework; path = "Pods-ApexApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F238867D7CA5A413B627AA8D2E5957 /* Pods-ApexAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ApexAppTests-dummy.m"; sourceTree = "<group>"; };
+		8B11D9CE99B395D33CE04FDBED3971AB /* Pods_ApexAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ApexAppTests.framework; path = "Pods-ApexAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3F70612C63A305062C8613CC57753A /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Apex/Store.swift; sourceTree = "<group>"; };
+		8CB5A6840DC7E78C558C4225DE607C17 /* Pods-ApexApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApexApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8E77BE0346D83E5D2A50A553E70F1DAF /* Apex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apex-prefix.pch"; sourceTree = "<group>"; };
+		930264295B61EDA65D8D56CB5E542F87 /* Pods-ApexApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApexApp-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E0D1A4BA7A48E420967E14A66AA879 /* Apex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apex.framework; path = Apex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7E27E4D05307A2F12E706C5AB6EE3E /* Pods-ApexAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApexAppTests-umbrella.h"; sourceTree = "<group>"; };
+		9DF62AD2D197F1373A4CA653FF833DC9 /* Pods-ApexAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ApexAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0EAACE73A89B46158C0BB0BB6E9341D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12E1AC322C1BCB045D0D4DAE51EA2B9 /* CommandComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandComponent.swift; path = Apex/CommandComponent.swift; sourceTree = "<group>"; };
-		A3F9ADAB6B7A7A15BD18E18386ADA896 /* Pods-ApexApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ApexApp-umbrella.h"; sourceTree = "<group>"; };
 		A688656625DA98446B9F514DCD59BDE7 /* PopPushAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopPushAlgorithm.swift; path = Apex/PopPushAlgorithm.swift; sourceTree = "<group>"; };
-		BC2FEF99B7EB9A0A30862DE204F78841 /* Pods-ApexApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ApexApp.modulemap"; sourceTree = "<group>"; };
+		A83BF9364498247930479392B511C8BF /* Pods-ApexAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApexAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		BAA2071772675FDC5BA94EF85A3DFC60 /* Pods-ApexApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ApexApp.release.xcconfig"; sourceTree = "<group>"; };
+		D784FDE948FAB6043A0F26CD9D0D1221 /* Pods-ApexApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ApexApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E04D154626074F8EAC3DDDA908134A01 /* ViewControllerPresentationComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerPresentationComponent.swift; path = Apex/ViewControllerPresentationComponent.swift; sourceTree = "<group>"; };
 		E9B9B06E602F0DE41AF47DFDE3CD3759 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAEEB100585681F0F4D97F2CDE03B167 /* Pods-ApexApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ApexApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F04CD6E41484BB05E336D428F9A59E7C /* Pods-ApexApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ApexApp.modulemap"; sourceTree = "<group>"; };
+		F5E171A55DDB01A5173B5BB005C0881E /* Pods-ApexApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ApexApp-dummy.m"; sourceTree = "<group>"; };
+		FEB4C774EE9CE55F8DFC40352BFEE765 /* Pods-ApexAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ApexAppTests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		472178D6EDA098BFF3ABC2E79DFB9E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D57C2E9C9881EB97BC8E35CADE4D67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		614D0D7C4F69AEE179FC7C02ACA10B00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +107,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6C0B7D2484D346BCACA7E02E4ADC96 /* Pods-ApexAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0EAACE73A89B46158C0BB0BB6E9341D /* Info.plist */,
+				192DF4496F3ABBB009985AFFBCF590A6 /* Pods-ApexAppTests.modulemap */,
+				0FDFC3F7FAF198C4E83DD5F29C44F1E8 /* Pods-ApexAppTests-acknowledgements.markdown */,
+				9DF62AD2D197F1373A4CA653FF833DC9 /* Pods-ApexAppTests-acknowledgements.plist */,
+				85F238867D7CA5A413B627AA8D2E5957 /* Pods-ApexAppTests-dummy.m */,
+				A83BF9364498247930479392B511C8BF /* Pods-ApexAppTests-frameworks.sh */,
+				FEB4C774EE9CE55F8DFC40352BFEE765 /* Pods-ApexAppTests-resources.sh */,
+				9D7E27E4D05307A2F12E706C5AB6EE3E /* Pods-ApexAppTests-umbrella.h */,
+				7107C08D927873E0E792A68B29F22207 /* Pods-ApexAppTests.debug.xcconfig */,
+				376E6E6C6BB5F0A1C967D66FB6903D14 /* Pods-ApexAppTests.release.xcconfig */,
+			);
+			name = "Pods-ApexAppTests";
+			path = "Target Support Files/Pods-ApexAppTests";
+			sourceTree = "<group>";
+		};
+		298052F083C51DD12A2F336CD2E97894 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDB700882DA6DA571BB0310D34D9AEAA /* Pods-ApexApp */,
+				0E6C0B7D2484D346BCACA7E02E4ADC96 /* Pods-ApexAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		2F5B809979BEAD0E3CAE05800CE7DF32 /* Apex */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,30 +162,14 @@
 			path = "../Target Support Files/Apex";
 			sourceTree = "<group>";
 		};
-		44999F5D8A9DC0115A24A5DA51AC1482 /* Pods-ApexApp */ = {
+		72BB9BE18118A43A7C3051A726BE9E80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41B648FA960B4B1DBADECF64E87E65D1 /* Info.plist */,
-				BC2FEF99B7EB9A0A30862DE204F78841 /* Pods-ApexApp.modulemap */,
-				EAEEB100585681F0F4D97F2CDE03B167 /* Pods-ApexApp-acknowledgements.markdown */,
-				58D070488A0582F5EDA9BD1F69E70380 /* Pods-ApexApp-acknowledgements.plist */,
-				532CF383BD3829E1A55F357497F83DA3 /* Pods-ApexApp-dummy.m */,
-				6ABE94B0DFA9AC44BF5998BC840AF438 /* Pods-ApexApp-frameworks.sh */,
-				7BAB5D3A9994030CD965BF6CE5AB7462 /* Pods-ApexApp-resources.sh */,
-				A3F9ADAB6B7A7A15BD18E18386ADA896 /* Pods-ApexApp-umbrella.h */,
-				469BAB7D83A5D28CD76707B929015625 /* Pods-ApexApp.debug.xcconfig */,
-				21E70A0F5566C8435035AD52093C3A09 /* Pods-ApexApp.release.xcconfig */,
+				93E0D1A4BA7A48E420967E14A66AA879 /* Apex.framework */,
+				4A56CFE6860957F6C04971989CAC84DD /* Pods_ApexApp.framework */,
+				8B11D9CE99B395D33CE04FDBED3971AB /* Pods_ApexAppTests.framework */,
 			);
-			name = "Pods-ApexApp";
-			path = "Target Support Files/Pods-ApexApp";
-			sourceTree = "<group>";
-		};
-		79C57EDE1124D3D5765A6AF1E122F4A6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				44999F5D8A9DC0115A24A5DA51AC1482 /* Pods-ApexApp */,
-			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -138,8 +178,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				88F45AF6642D81D99BB1BA6DBF625252 /* Pods */,
-				C71B96007A9DF459D61ADCBA2665C947 /* Products */,
-				79C57EDE1124D3D5765A6AF1E122F4A6 /* Targets Support Files */,
+				72BB9BE18118A43A7C3051A726BE9E80 /* Products */,
+				298052F083C51DD12A2F336CD2E97894 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,15 +199,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C71B96007A9DF459D61ADCBA2665C947 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				584E7A08CE5B1AFE341E307834947E02 /* Apex.framework */,
-				812483D1C348F192E9C4955C550258AD /* Pods_ApexApp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,9 +207,35 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		DDB700882DA6DA571BB0310D34D9AEAA /* Pods-ApexApp */ = {
+			isa = PBXGroup;
+			children = (
+				2953C50AABD2CB1CB544B301D06CECD2 /* Info.plist */,
+				F04CD6E41484BB05E336D428F9A59E7C /* Pods-ApexApp.modulemap */,
+				D784FDE948FAB6043A0F26CD9D0D1221 /* Pods-ApexApp-acknowledgements.markdown */,
+				64FD708EF654C99C11F916E7757A34C8 /* Pods-ApexApp-acknowledgements.plist */,
+				F5E171A55DDB01A5173B5BB005C0881E /* Pods-ApexApp-dummy.m */,
+				767088CB8216BD5951D802990740A068 /* Pods-ApexApp-frameworks.sh */,
+				0E39D29B53B3392C3DD2B51D75A653FC /* Pods-ApexApp-resources.sh */,
+				930264295B61EDA65D8D56CB5E542F87 /* Pods-ApexApp-umbrella.h */,
+				8CB5A6840DC7E78C558C4225DE607C17 /* Pods-ApexApp.debug.xcconfig */,
+				BAA2071772675FDC5BA94EF85A3DFC60 /* Pods-ApexApp.release.xcconfig */,
+			);
+			name = "Pods-ApexApp";
+			path = "Target Support Files/Pods-ApexApp";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		10BA27403EC11533D76CB91705D084F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA959FA4CD59630B41BB477B21EA6418 /* Pods-ApexAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACF00DF10CE94B0796EE11F7BCCACE18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,7 +269,25 @@
 			);
 			name = Apex;
 			productName = Apex;
-			productReference = 584E7A08CE5B1AFE341E307834947E02 /* Apex.framework */;
+			productReference = 93E0D1A4BA7A48E420967E14A66AA879 /* Apex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFAA29E614A70829635E55CB0CC14EFE /* Pods-ApexAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10E10456CD55BF2566A14142E13D488 /* Build configuration list for PBXNativeTarget "Pods-ApexAppTests" */;
+			buildPhases = (
+				47E49E385B17F590CE100976458C7F28 /* Sources */,
+				472178D6EDA098BFF3ABC2E79DFB9E84 /* Frameworks */,
+				10BA27403EC11533D76CB91705D084F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78198592953253A545DE04A3B2CB8396 /* PBXTargetDependency */,
+			);
+			name = "Pods-ApexAppTests";
+			productName = "Pods-ApexAppTests";
+			productReference = 8B11D9CE99B395D33CE04FDBED3971AB /* Pods_ApexAppTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F6CA5C4E432DEE5484FC2A12A9A4C027 /* Pods-ApexApp */ = {
@@ -230,7 +305,7 @@
 			);
 			name = "Pods-ApexApp";
 			productName = "Pods-ApexApp";
-			productReference = 812483D1C348F192E9C4955C550258AD /* Pods_ApexApp.framework */;
+			productReference = 4A56CFE6860957F6C04971989CAC84DD /* Pods_ApexApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -250,17 +325,26 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C71B96007A9DF459D61ADCBA2665C947 /* Products */;
+			productRefGroup = 72BB9BE18118A43A7C3051A726BE9E80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				304F514E483ACFCC2A077B9ADBB3F1ED /* Apex */,
 				F6CA5C4E432DEE5484FC2A12A9A4C027 /* Pods-ApexApp */,
+				EFAA29E614A70829635E55CB0CC14EFE /* Pods-ApexAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		47E49E385B17F590CE100976458C7F28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEC5A12A77AB7983C6AB89F1D6F796D /* Pods-ApexAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9807F648C5A07D1AF8B73D062DCEDBE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +374,12 @@
 			name = Apex;
 			target = 304F514E483ACFCC2A077B9ADBB3F1ED /* Apex */;
 			targetProxy = 84178EEAF8414DE6ABCC36EFB721633F /* PBXContainerItemProxy */;
+		};
+		78198592953253A545DE04A3B2CB8396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apex;
+			target = 304F514E483ACFCC2A077B9ADBB3F1ED /* Apex */;
+			targetProxy = B1A8FF24F1907343F398BF2135A60E68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -386,9 +476,86 @@
 			};
 			name = Release;
 		};
+		7DFE32D59E5389315E5E990E9EA58749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7107C08D927873E0E792A68B29F22207 /* Pods-ApexAppTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ApexAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApexAppTests/Pods-ApexAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ApexAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F90E5FF08FB3F0B5219219D0ED26723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376E6E6C6BB5F0A1C967D66FB6903D14 /* Pods-ApexAppTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ApexAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ApexAppTests/Pods-ApexAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ApexAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		95C809917B0F86D70E910034005FDA32 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E70A0F5566C8435035AD52093C3A09 /* Pods-ApexApp.release.xcconfig */;
+			baseConfigurationReference = BAA2071772675FDC5BA94EF85A3DFC60 /* Pods-ApexApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -495,7 +662,7 @@
 		};
 		E0E55CDC1124A5E6780A1D0D01DEEA33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 469BAB7D83A5D28CD76707B929015625 /* Pods-ApexApp.debug.xcconfig */;
+			baseConfigurationReference = 8CB5A6840DC7E78C558C4225DE607C17 /* Pods-ApexApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -558,6 +725,15 @@
 			buildConfigurations = (
 				C1D4598E59FFD6DDA3CC92DB4B208785 /* Debug */,
 				A8DD169439E022D3D81A2F3B4110B008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10E10456CD55BF2566A14142E13D488 /* Build configuration list for PBXNativeTarget "Pods-ApexAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DFE32D59E5389315E5E990E9EA58749 /* Debug */,
+				7F90E5FF08FB3F0B5219219D0ED26723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
